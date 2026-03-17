@@ -1,7 +1,4 @@
-﻿// ==== script.js ====
-
-// ── MENU DATA ──
-const menuItems = [
+﻿const menuItems = [
   {
     name: "Classic Burger",
     category: "meals",
@@ -43,7 +40,6 @@ const menuItems = [
     price: "₹149",
     desc: "Crispy rolls filled with stir-fried veggies & noodles",
     img: "https://media.istockphoto.com/id/2207965703/photo/deep-fried-spring-rolls-with-salad-as-an-appetizer.webp?a=1&b=1&s=612x612&w=0&k=20&c=7tLjHPMKKNrayfIap91bx5q2TXW7xHibBtOk8Azm44k=",
-    
   },
   {
     name: "Cold Coffee",
@@ -98,8 +94,6 @@ function handleAddCart(btn) {
   }, 1500);
 }
 
-// Filter buttons
-
 document.querySelectorAll(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     document
@@ -112,7 +106,6 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
 
 renderMenu();
 
-// ── STICKY NAVBAR ──
 window.addEventListener("scroll", () => {
   document
     .getElementById("navbar")
@@ -122,8 +115,6 @@ window.addEventListener("scroll", () => {
     .classList.toggle("visible", window.scrollY > 400);
   observeReveal();
 });
-
-// ── MOBILE MENU ──
 
 document
   .getElementById("hamburger")
@@ -136,7 +127,6 @@ function closeMobile() {
   document.getElementById("mobileMenu").classList.remove("open");
 }
 
-// ── REVEAL ON SCROLL ──
 function observeReveal() {
   document.querySelectorAll(".reveal:not(.visible)").forEach((el) => {
     const rect = el.getBoundingClientRect();

@@ -48,7 +48,7 @@ img {
   max-width: 100%;
 }
 
-/* ── NAVBAR ── */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -149,7 +149,7 @@ img {
   cursor: pointer;
 }
 
-/* ── HERO ── */
+
 .hero {
   min-height: 100vh;
   display: grid;
@@ -304,7 +304,7 @@ img {
   }
 }
 
-/* ── SECTION BASE ── */
+
 section {
   padding: 100px 60px;
 }
@@ -341,7 +341,6 @@ section {
   margin: 0 auto;
 }
 
-/* ── FEATURES ── */
 #features {
   background: var(--dark);
 }
@@ -398,7 +397,7 @@ section {
   line-height: 1.6;
 }
 
-/* ── MENU ── */
+
 #menu {
   background: var(--bg);
 }
@@ -511,7 +510,6 @@ section {
   background: var(--green);
 }
 
-/* ── HOW IT WORKS ── */
 #how {
   background: var(--orange-light);
 }
@@ -569,7 +567,7 @@ section {
   line-height: 1.6;
 }
 
-/* ── TESTIMONIALS ── */
+
 #testimonials {
   background: white;
 }
@@ -629,7 +627,7 @@ section {
   color: var(--muted);
 }
 
-/* ── CTA ── */
+
 #cta {
   background: var(--dark);
   text-align: center;
@@ -663,7 +661,7 @@ section {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* ── FOOTER ── */
+
 footer {
   background: #0f0b04;
   color: #a09080;
@@ -695,7 +693,7 @@ footer p {
   font-size: 0.82rem;
 }
 
-/* ── SCROLL TO TOP ── */
+
 .scroll-top {
   position: fixed;
   bottom: 32px;
@@ -721,7 +719,7 @@ footer p {
   pointer-events: all;
 }
 
-/* ── REVEAL ANIMATION ── */
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -734,7 +732,6 @@ footer p {
   transform: translateY(0);
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .features-grid,
   .steps-grid,
