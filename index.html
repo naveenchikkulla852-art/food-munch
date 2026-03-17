@@ -1,0 +1,347 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodMunch – Fresh Food Delivered Fast</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">🍔 FoodMunch</div>
+      <ul class="nav-links">
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <button
+        class="nav-cta"
+        onclick="
+          document.getElementById('cta').scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        Order Now
+      </button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">✕</button>
+      <a href="#features" onclick="closeMobile()">Why Us</a>
+      <a href="#menu" onclick="closeMobile()">Menu</a>
+      <a href="#how" onclick="closeMobile()">How It Works</a>
+      <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+      <button
+        class="btn-primary"
+        onclick="
+          closeMobile();
+          document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
+        "
+      >
+        Order Now
+      </button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-tag">🚀 30-min delivery guarantee</div>
+        <h1 class="hero-title">
+          Fresh Food,<br /><span>Delivered Fast</span><br />To Your Door
+        </h1>
+        <p class="hero-desc">
+          Skip the queue. Order from 200+ restaurants and get hot, fresh food
+          delivered to your doorstep in under 30 minutes.
+        </p>
+        <div class="hero-btns">
+          <button
+            class="btn-primary"
+            onclick="
+              document
+                .getElementById('menu')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Explore Menu 🍽️
+          </button>
+          <button
+            class="btn-outline"
+            onclick="
+              document
+                .getElementById('how')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            How it works
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Restaurants</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">50K+</div>
+            <div class="stat-label">Happy Users</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4.9★</div>
+            <div class="stat-label">App Rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
+          alt="Delicious food"
+          class="hero-img-main"
+        />
+        <div class="hero-badge">
+          <span class="hero-badge-icon">⏱️</span>
+          <div>
+            <div class="hero-badge-val">28 min</div>
+            <div class="hero-badge-text">Avg delivery time</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Why FoodMunch</span>
+        <h2 class="section-title" style="color: white">
+          Everything You Need,<br />Nothing You Don't
+        </h2>
+        <p class="section-sub">
+          We obsess over the details so you can just enjoy the food.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>
+            Average delivery in under 30 minutes. Real-time GPS tracking so you
+            know exactly where your food is.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🌿</div>
+          <h3>Fresh Ingredients</h3>
+          <p>
+            Every restaurant partner is vetted for quality and hygiene. We don't
+            compromise on freshness.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💰</div>
+          <h3>Best Prices</h3>
+          <p>
+            No hidden fees. What you see is what you pay. Plus weekly deals up
+            to 40% off your favorites.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🛡️</div>
+          <h3>Safe & Hygienic</h3>
+          <p>
+            Tamper-proof packaging. All delivery partners follow strict hygiene
+            protocols.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📱</div>
+          <h3>Easy Ordering</h3>
+          <p>
+            Order in under 2 minutes. Save your favorites, reorder in one tap,
+            pay securely.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎯</div>
+          <h3>Smart Recommendations</h3>
+          <p>
+            Personalized suggestions based on your tastes. Discover new dishes
+            you'll love every week.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Our Menu</span>
+        <h2 class="section-title">
+          Freshly Made, <span style="color: var(--orange)">Just for You</span>
+        </h2>
+        <p class="section-sub">
+          From comfort classics to healthy bites — there's something for every
+          craving.
+        </p>
+      </div>
+
+      <div class="menu-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="meals">Meals</button>
+        <button class="filter-btn" data-filter="snacks">Snacks</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Order in 4 Simple Steps</h2>
+        <p class="section-sub">
+          Getting great food delivered has never been this easy.
+        </p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-num">1</div>
+          <h3>Choose Your Food</h3>
+          <p>
+            Browse 200+ restaurants and thousands of dishes. Filter by cuisine,
+            price, and ratings.
+          </p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">2</div>
+          <h3>Customize & Order</h3>
+          <p>
+            Add items to cart, pick your customizations, and checkout securely
+            in seconds.
+          </p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">3</div>
+          <h3>Track in Real-Time</h3>
+          <p>
+            Watch your order get prepared and track your delivery driver live on
+            the map.
+          </p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">4</div>
+          <h3>Enjoy Your Meal</h3>
+          <p>
+            Your food arrives hot and fresh. Rate your experience and earn
+            loyalty points.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Reviews</span>
+        <h2 class="section-title">
+          What Our <span style="color: var(--orange)">Customers Say</span>
+        </h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Fastest delivery I've ever experienced. Food arrived piping hot in
+            just 22 minutes. The packaging was excellent too!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨</div>
+            <div>
+              <div class="author-name">Rahul Sharma</div>
+              <div class="author-loc">Hyderabad</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I order from FoodMunch at least 4 times a week. The variety is
+            unmatched and the prices are very reasonable."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩</div>
+            <div>
+              <div class="author-name">Priya Reddy</div>
+              <div class="author-loc">Bangalore</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★☆</div>
+          <p class="testimonial-text">
+            "The real-time tracking feature is a game changer. I always know
+            exactly when my food will arrive. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🧑</div>
+            <div>
+              <div class="author-name">Arjun Mehta</div>
+              <div class="author-loc">Mumbai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="reveal">
+        <span class="section-tag">Get Started</span>
+        <h2 class="section-title">
+          Hungry? <span style="color: var(--orange)">We've Got You.</span>
+        </h2>
+        <p class="section-sub">
+          Join 50,000+ happy customers. First order gets free delivery.
+        </p>
+        <div class="cta-btns">
+          <button class="btn-white">🍔 Order Now — Free Delivery</button>
+          <button
+            class="btn-outline"
+            style="color: white; border-color: rgba(255, 255, 255, 0.3)"
+          >
+            Download App
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">🍔 FoodMunch</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#how">How It Works</a>
+        <a href="#testimonials">Reviews</a>
+      </div>
+      <p>© 2025 FoodMunch. All rights reserved.</p>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button
+      class="scroll-top"
+      id="scrollTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
